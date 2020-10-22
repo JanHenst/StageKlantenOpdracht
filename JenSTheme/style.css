@@ -7,5 +7,21 @@ Requires PHP: 7.0
 
  */
 html {
-
+ font: normal normal normal 100% Helvetica Neue;
 }
+
+body {
+ margin: 0;
+}
+
+#page-container {
+ position: relative;
+ min-height: 100%;
+}
+
+#content-wrap {
+ padding-bottom: 1.7rem;    /* Footer height */
+}
+
+
+

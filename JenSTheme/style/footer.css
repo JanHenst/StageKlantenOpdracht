@@ -3,8 +3,17 @@ footer{
     border-top: 1px solid #707070 ;
     border-bottom: 1px solid #707070 ;
 
-    width: 100vw;
-    /*height: 7.16%;*/
+    width: 100%;
+    padding: 10px 0 10px 0;
     font: normal normal normal 150% Helvetica Neue;
     text-align: center;
+    bottom: 0;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.7rem;            /* Footer height */
 }
