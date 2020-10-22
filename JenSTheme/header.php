@@ -7,13 +7,19 @@
 <header>
     <div class="nav">
       <h2 class="logo">J&S</h2>
-       <a href="./?page_id=3">Home</a>
-       <a href="./?page_id=3">Over ons</a>
-       <a href="./?page_id=3">Reportoire</a>
-       <a href="./?page_id=3">Speellijst</a>
-       <a href="./?page_id=3">Shop</a>
-       <a href="./?page_id=3">Reviews</a>
-       <a href="./?page_id=3">Contact</a>
+    <?php
+    $pages = get_pages();
+    echo "<a href='./'>home</a>";
+    for($i=0;$i<sizeof($pages);$i++){
+        if(get_the_title($pages[$i])=="404"){
+            $i++;
+        }
+        else {
+	        echo"<a href='".get_page_link($pages[$i])."'>".get_the_title( $pages[ $i ] )."</a>";
+        }
+    }
+
+?>
       <div class="nav-icons">
           <div class="email-nav">
             icon
