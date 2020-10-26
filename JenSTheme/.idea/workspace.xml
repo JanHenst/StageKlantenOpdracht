@@ -17,11 +17,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/../../.." />
@@ -63,7 +58,7 @@
       <workItem from="1603272016417" duration="14981000" />
       <workItem from="1603363082990" duration="263000" />
       <workItem from="1603364005200" duration="11151000" />
-      <workItem from="1603701497731" duration="4745000" />
+      <workItem from="1603701497731" duration="7357000" />
     </task>
     <servers />
   </component>
@@ -72,6 +67,12 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="176" width="598" height="548" key="find.popup" timestamp="1603709170369">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="176" width="598" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1603709170369" />
   </component>
   <component name="masterDetails">
     <states>
