@@ -24,7 +24,23 @@
 .nav a:hover  {color: #D9631E;}
 
 .nav-icons {
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.email-nav{
+    fill: #A6431F;
+    width: 63.4px;
+    height: 48.29px;
+    transform: scale(0.5);
+}
+
+.facebook-nav{
+    color: #A6431F;
+    width: 150px;
+    height: 150px;
+    transform: scale(0.25);
+
 }

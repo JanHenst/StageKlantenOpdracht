@@ -27,10 +27,7 @@ echo "<a class='link' href='".get_page_link($post)."'>Lees meer...</a>";
 
 <html>
 
-<div id="page-container">
-    <div id="content-wrap">
-        <h1>Ello</h1>
-    </div>
+
 
 
 </html>

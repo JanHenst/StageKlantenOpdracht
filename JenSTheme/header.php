@@ -21,12 +21,12 @@
 
 ?>
       <div class="nav-icons">
-          <div class="email-nav">
-            icon
-          </div>
-          <div class="likeButton-nav">
-            icon
-          </div>
+          <svg class="email-nav">
+              <use xlink:href='/stageproject/wp-content/themes/JenSTheme/plaatjes/header/email-icon.svg#email'></use>
+          </svg>
+          <svg class="facebook-nav">
+              <use xlink:href='/stageproject/wp-content/themes/JenSTheme/plaatjes/header/facebook.svg#facebook'></use>
+          </svg>
       </div>
     </div>
 </header>
