@@ -77,9 +77,22 @@ add_action('customize_register','colors');
 
 function customize_css()
 {
+	$color1 =get_theme_mod('achtergrond', '#FFFFFF');
+	$color2 =get_theme_mod('text', '#000000');
+	$color3 =get_theme_mod('accent1', '#A6431F');
+	$color4 =get_theme_mod('accent2','#D9631E')
 	?>
 	<style type="text/css">
-		body { background-color: <?php echo get_theme_mod('achtergrond', '#000000'); ?>; }
+		body { background-color: <?php echo $color1 ?>;
+			   color:  <?php echo $color2 ?>;
+		}
+		.nav a{color:  <?php echo$color3  ?>;}
+		.email-nav{fill:  <?php echo$color3 ?>;}
+		.facebook-nav{color:  <?php echo$color3 ?>;}
+		.nav a:active {color: <?php echo $color4?>;}
+		.nav a:hover  {color: <?php echo $color4?>;}
+
+
 	</style>
 	<?php
 }
