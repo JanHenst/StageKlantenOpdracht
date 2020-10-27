@@ -31,7 +31,7 @@ function colors( $wp_customize )
 	) );
 
 	$wp_customize->add_setting( 'achtergrond' , array(
-		'default'   => '#000000',
+		'default'   => '#FFFFFF',
 		'transport' => 'refresh',
 	) );
 	$wp_customize->add_setting( 'text' , array(
@@ -40,7 +40,11 @@ function colors( $wp_customize )
 	) );
 
 	$wp_customize->add_setting( 'accent1' , array(
-		'default'   => '#000000',
+		'default'   => '#A6431F',
+		'transport' => 'refresh',
+	) );
+	$wp_customize->add_setting( 'accent2' , array(
+		'default'   => '#D9631E',
 		'transport' => 'refresh',
 	) );
 
@@ -59,18 +63,26 @@ function colors( $wp_customize )
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'Theme-accent1', array(
 		'label'    => __( 'accent 1', 'starter' ),
 		'section'  => 'starter_new_section_name',
-		'settings' => 'text',
+		'settings' => 'accent1',
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'Theme-accent2', array(
 		'label'    => __( 'accent 2', 'starter' ),
 		'section'  => 'starter_new_section_name',
-		'settings' => 'text',
+		'settings' => 'accent2',
 	) ) );
 }
 add_action('customize_register','colors');
 
 
 
-
+function customize_css()
+{
+	?>
+	<style type="text/css">
+		body { background-color: <?php echo get_theme_mod('achtergrond', '#000000'); ?>; }
+	</style>
+	<?php
+}
+add_action( 'wp_head', 'customize_css');
 
 
