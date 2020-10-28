@@ -2,30 +2,32 @@
 <html>
 
 <head>
-</head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1"></head>
 <body>
 <header>
     <div class="nav">
+        <img class="hamburger"  src="https://www.searchpng.com/wp-content/uploads/2018/12/cracked-Glass.png">
       <h2 class="logo">J&S</h2>
     <?php
     $pages = get_pages();
-    echo "<a href='./'>home</a>";
+    echo "<a class='headerbutton' href='./'>home</a>";
     for($i=0;$i<sizeof($pages);$i++){
         if(get_the_title($pages[$i])=="404"){
             $i++;
         }
         else {
-	        echo"<a href='".get_page_link($pages[$i])."'>".get_the_title( $pages[ $i ] )."</a>";
+	        echo"<a class='headerbutton' href='".get_page_link($pages[$i])."'>".get_the_title( $pages[ $i ] )."</a>";
         }
     }
 
 ?>
       <div class="nav-icons">
           <svg class="email-nav">
-              <use xlink:href='/stageproject/wp-content/themes/JenSTheme/plaatjes/header/email-icon.svg#email'></use>
+              <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/email-icon.svg#email'></use>
           </svg>
           <svg class="facebook-nav">
-              <use xlink:href='/stageproject/wp-content/themes/JenSTheme/plaatjes/header/facebook.svg#facebook'></use>
+              <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/facebook.svg#facebook'></use>
           </svg>
       </div>
     </div>

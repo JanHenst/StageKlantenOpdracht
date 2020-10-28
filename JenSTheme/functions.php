@@ -13,8 +13,9 @@ function add_theme_scripts() {
     wp_enqueue_style( 'header', get_template_directory_uri() . '/style/header.css',false,'1','all');
 
     wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css',false,'1','all');
-
-
+    if(wp_is_mobile()) {
+	wp_enqueue_script( 'hamburger', get_template_directory_uri() . '/javascript/header/hamburger.js', false, 1, true );
+    }
     if ( is_singular() & comments_open() & get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
