@@ -1,0 +1,145 @@
+.nav {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    margin-top: -70px;
+}
+
+.hamburger{
+    height: 50%;
+    width: 30%;
+    display: none;
+}
+
+.logo{
+    font-weight: bold;
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.nav a {
+    height: 100%;
+    /*margin: 8px 10px 0 10px;*/
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A6431F;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.nav a:active {color: #D9631E;}
+.nav a:hover  {color: #D9631E;}
+
+.nav .logo a {
+    color: #000;
+    margin: 5px 10px 5px 10px;
+    font-size: 35px;
+}
+.nav .logo a:active {color: #000;}
+.nav .logo a:hover  {color: #000;}
+
+.nav-icons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-nav{
+    fill: #A6431F;
+    width: 63.4px;
+    height: 48.29px;
+    transform: scale(0.5);
+    cursor: pointer;
+}
+
+.facebook-nav{
+    color: #A6431F;
+    width: 150px;
+    height: 150px;
+    transform: scale(0.25);
+    cursor: pointer;
+}
+
+
+.pannel.no-pannel {
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+
+.main {
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .nav{
+        text-align: left;
+        height: 55px;
+        justify-content: flex-start;
+    }
+    .nav .hamburger.menu-icon {
+        display: block;
+        width: 33px;
+        height: 33px;
+        margin-left: 25px;
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+    .nav a, .nav-icons{
+        display: none;
+    }
+    .nav .logo a {
+        display: unset;
+    }
+    .nav-icons{
+        justify-content: flex-start;
+    }
+    .email-nav {
+        margin-right: -40px;
+    }
+
+    .logo {
+        margin: 5px 10px 1px;
+        font-size: 35px;
+    }
+
+
+
+    .pannel{
+        top: 55px;
+        z-index: 2;
+        background-color: white;
+        position: absolute;
+        height: 100vh;
+        width: 99.8vw;
+        border-top:1px solid #000 ;
+        border-right:1px solid #000;
+
+        transition: transform 1s ease,opacity .7s ease;
+    }
+
+    .pannel a {
+        display: block;
+        text-decoration: none;
+        margin: 5%;
+        font-size: 200%;
+        font-weight: bold;
+        color: #A6431F;
+    }
+    .pannel a:active {color: #D9631E;}
+    .pannel a:hover  {color: #D9631E;}
+
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+    .facebook-nav {
+        margin-left: -35px;
+        margin-right: -20px;
+    }
+}

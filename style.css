@@ -1,0 +1,33 @@
+ /*
+Theme Name:JenSa Theme
+Author: Ms Tjeertes , Mr van der henst
+Version: 1
+Requires PHP: 7.0
+
+
+ */
+html {
+ font: normal normal normal 100% Helvetica Neue;
+}
+
+body {
+ margin: 0;
+}
+
+#page-container {
+ position: relative;
+ min-height: 100%;
+}
+
+#content-wrap {
+ padding-bottom: 1.7rem;    /* Footer height */
+}
+
+
+
+.link a {
+
+    color: #A6431F;
+}
+.link a:active {color: #D9631E;}
+.link a:hover  {color: #D9631E;}
