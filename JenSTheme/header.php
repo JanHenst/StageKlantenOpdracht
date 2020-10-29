@@ -4,14 +4,16 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1"></head>
-<body>
+<body onload="panelMake()">
 <header>
     <div class="nav">
-        <img class="hamburger"  src="https://www.searchpng.com/wp-content/uploads/2018/12/cracked-Glass.png">
-      <h2 class="logo">J&S</h2>
+        <svg id="hamburger-icon" class="hamburger menu-icon">
+            <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/menu.svg#menu'></use>
+        </svg>
+      <h2 class="logo"><a href="">J&S</a></h2>
     <?php
     $pages = get_pages();
-    echo "<a class='headerbutton' href='./'>home</a>";
+//    echo "<a class='headerbutton' href='./'>home</a>";
     for($i=0;$i<sizeof($pages);$i++){
         if(get_the_title($pages[$i])=="404"){
             $i++;
