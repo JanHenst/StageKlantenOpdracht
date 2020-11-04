@@ -62,7 +62,9 @@
     transform: scale(0.25);
     cursor: pointer;
 }
-
+.hamburger-icon{
+    color: pink;
+}
 
 .pannel.no-pannel {
     transform: translateX(-100vw);

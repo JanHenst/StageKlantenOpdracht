@@ -1,0 +1,36 @@
+
+.carouselContainer{
+    background-color: black;
+    width: 98.9vw;
+    height: 96vh;
+    overflow: hidden;
+    float: top;
+}
+.carousel{
+    display: inline-block;
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+    float: left;
+
+}
+.arrowR{
+    z-index: 2;
+    position: absolute;
+    top: 20vw;
+    left: 90vw;
+    font-size: 20vh;
+    display: inline-block;
+    color: white;
+}
+
+.arrowL{
+    z-index: 2;
+    position: absolute;
+    top: 20vw;
+    left: 5vw;
+    font-size: 20vh;
+    display: inline-block;
+    color: white;
+
+}

@@ -4,6 +4,7 @@ var icons =  document.getElementsByClassName('nav-icons');
 var pannel =  document.createElement("div");
 var PannelBool = true;
 
+body.onload(panelMake());
 
 const button_amount = buttons.length;
 for(i=0;i<button_amount;i++) {

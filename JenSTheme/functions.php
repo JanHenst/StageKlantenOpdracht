@@ -12,7 +12,14 @@ function add_theme_scripts() {
 
     wp_enqueue_style( 'header', get_template_directory_uri() . '/style/header.css',false,'1','all');
 
-    wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css',false,'1','all');
+	wp_enqueue_style( 'carousel', get_template_directory_uri() . '/style/carousel.css',false,'1','all');
+	wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css',false,'1','all');
+
+
+	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/javascript/landing/carousel.js', false, 1, true );
+
+
+
     if(wp_is_mobile()) {
 	wp_enqueue_script( 'hamburger', get_template_directory_uri() . '/javascript/header/hamburger.js', false, 1, true );
     }
@@ -90,7 +97,8 @@ function customize_css()
 		.nav a{color:  <?php echo$color3  ?>;}
 		.email-nav{fill:  <?php echo$color3 ?>;}
 		.facebook-nav{color:  <?php echo$color3 ?>;}
-		.nav a:active {color: <?php echo $color4?>;}
+        .hamburger-icon{fill:  <?php echo$color3 ?>;}
+        .nav a:active {color: <?php echo $color4?>;}
 		.nav a:hover  {color: <?php echo $color4?>;}
 
 
