@@ -4,8 +4,7 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1"></head>
-<!--<body onload="panelMake()">-->
-<body>
+<body onload="panelMake()">
 <header>
     <div class="nav">
         <svg id="hamburger-icon" class="hamburger menu-icon">
