@@ -1,10 +1,14 @@
 .nav {
-    /*position: fixed;*/
+    position: fixed;
+    background: #fff;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
+    margin-top: -60px;
+    z-index: 999;
 }
 
 .hamburger{
@@ -71,11 +75,15 @@
     opacity: 0;
 }
 
+.main {
+    margin-top: 70px;
+}
+
 @media only screen and (max-width: 425px) {
 
     .nav{
         text-align: left;
-        height: 55px;
+        height: 60px;
         justify-content: flex-start;
     }
     .nav .hamburger.menu-icon {
@@ -130,6 +138,12 @@
     .pannel a:active {color: #D9631E;}
     .pannel a:hover  {color: #D9631E;}
 
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .nav {
+        margin-top: -110px;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 1024px) {

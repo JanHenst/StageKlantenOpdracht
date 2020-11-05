@@ -1,41 +1,97 @@
 
 .carouselContainer{
     background-color: black;
-    width: 98.9vw;
-    height: 96vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     float: top;
+    margin-top: 60px;
 }
 .carousel{
     display: inline-block;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     float: left;
 
 }
-.arrowR{
+
+.arrowR, .arrowL{
     z-index: 2;
     position: absolute;
     top: 20vw;
-    left: 90vw;
-    font-size: 20vh;
     display: inline-block;
-    color: white;
+    cursor: pointer;
+}
+.arrowR {right: 5vw;}
+.arrowL {left: 5vw;}
+
+.arrow-carousel {
+    height: 103px;
+    width: 60px;
 }
 
-.arrowL{
-    z-index: 2;
-    position: absolute;
-    top: 20vw;
-    left: 5vw;
-    font-size: 20vh;
-    display: inline-block;
-    color: white;
 
+@media (max-width: 320px) {
+    .carouselContainer {
+        height: 41%;
+    }
+    .arrowR, .arrowL{
+        top: 20%;
+    }
 }
-@media only screen and (max-width: 425px) {
-.carouselContainer{
-    display: none;
+@media (min-width: 321px) and (max-width: 375px) {
+    .carouselContainer {
+        height: 48%;
+    }
+    .arrowR, .arrowL{
+        top: 23%;
+    }
 }
+@media (min-width: 376px) and (max-width: 425px) {
+    .carouselContainer {
+        height: 54%;
+    }
+    .arrowR, .arrowL{
+        top: 25%;
+    }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    .arrowR, .arrowL{
+        transform: scale(.6);
+    }
+    .arrowR {
+        right: 0;
+    }
+    .arrowL {
+        left: 0;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .carouselContainer {
+        margin-top: 110px;
+        height: 70%;
+    }
+    .arrowR, .arrowL{
+        top: 40%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carouselContainer {
+        height: 87%;
+    }
+    .arrowR, .arrowL{
+        top: 43%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .carouselContainer {
+        height: 92%;
+    }
+    .arrowR, .arrowL{
+        top: 47%;
+    }
 }
