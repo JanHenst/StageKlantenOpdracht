@@ -4,7 +4,7 @@ let arrowL = document.getElementsByClassName('arrowL')[0];
 let arrowR = document.getElementsByClassName('arrowR')[0];
 
 
-    var images =["https://i.kym-cdn.com/photos/images/newsfeed/001/865/673/cc9.png","https://www.ma-web.nl/media/filer_public_thumbnails/filer_public/ea/29/ea29903f-3fd9-461e-92f0-5af745d6dc19/ma_education_contact_header.png__910x440_q85_box-0,0,1280,401_crop_subsampling-2_upscale.png"];
+var images =["https://i.kym-cdn.com/photos/images/newsfeed/001/865/673/cc9.png","https://www.ma-web.nl/media/filer_public_thumbnails/filer_public/ea/29/ea29903f-3fd9-461e-92f0-5af745d6dc19/ma_education_contact_header.png__910x440_q85_box-0,0,1280,401_crop_subsampling-2_upscale.png"];
 var currentPic;
 carouselF(images,0);
 
