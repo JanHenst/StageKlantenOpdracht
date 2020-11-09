@@ -41,6 +41,14 @@ carouselDiv.className=  'carousel';
     }
 
     carousel[carouselDiv].style.backgroundImage="url('"+immageArray[currentPic]+"')";
+
+
+
+    //add a aniamtion class before here
+    if(carouselDiv === 1){
+        console.log("test");
+        carousel[0].remove();
+    }
 }
 arrowL.addEventListener('click',function() {
     console.log('test');

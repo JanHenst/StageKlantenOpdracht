@@ -12,12 +12,18 @@ wp_head();
 
 
 get_header();
+include_once( 'carousel.php' );
+
 
 add_theme_scripts();
-
+?>
+<div class="main">
+	<?php
 echo get_the_title(get_post());
 echo get_the_content(get_post());
-
+?>
+</div>
+<?php
 
 
 get_footer();

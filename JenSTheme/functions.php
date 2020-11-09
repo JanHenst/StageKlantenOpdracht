@@ -15,10 +15,10 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'carousel', get_template_directory_uri() . '/style/carousel.css',false,'1','all');
 	wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css',false,'1','all');
 
-
+        if(is_page()===false) {
 	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/javascript/landing/carousel.js', false, 1, true );
 
-
+        }
 
     if(wp_is_mobile()) {
 	wp_enqueue_script( 'hamburger', get_template_directory_uri() . '/javascript/header/hamburger.js', false, 1, true );
