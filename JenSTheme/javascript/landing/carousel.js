@@ -4,12 +4,12 @@ let arrowL = document.getElementsByClassName('arrowL')[0];
 let arrowR = document.getElementsByClassName('arrowR')[0];
 
 
-var images =["https://i.kym-cdn.com/photos/images/newsfeed/001/865/673/cc9.png","https://www.ma-web.nl/media/filer_public_thumbnails/filer_public/ea/29/ea29903f-3fd9-461e-92f0-5af745d6dc19/ma_education_contact_header.png__910x440_q85_box-0,0,1280,401_crop_subsampling-2_upscale.png"];
+var images = files;
 var currentPic;
 carouselF(images,0);
 
 
-function carouselF(immageArray,pictureNum,next) {
+function carouselF(imageArray,pictureNum,next) {
 var carouselDiv  = document.createElement("DIV");
 carouselDiv.className=  'carousel';
 
@@ -28,9 +28,9 @@ carouselDiv.className=  'carousel';
 
         }
         if (currentPic ===-1){
-            currentPic =immageArray.length-1;
+            currentPic =imageArray.length-1;
         }
-        if(currentPic ===immageArray.length){
+        if(currentPic ===imageArray.length){
             currentPic=0;
         }
 
@@ -40,23 +40,20 @@ carouselDiv.className=  'carousel';
         carouselDiv=0;
     }
 
-    carousel[carouselDiv].style.backgroundImage="url('"+immageArray[currentPic]+"')";
-
+    carousel[carouselDiv].style.backgroundImage="url('"+tempuri+"/plaatjes/carousel/carouselContent/"+imageArray[currentPic]+"')";
 
 
     //add a aniamtion class before here
     if(carouselDiv === 1){
-        console.log("test");
         carousel[0].remove();
     }
 }
 arrowL.addEventListener('click',function() {
-    console.log('test');
 
     carouselF(images, null, false)
 });
 
 arrowR.addEventListener('click',function() {
-console.log('test');
     carouselF(images, null, true)
 });
+console.log(files[0]);
