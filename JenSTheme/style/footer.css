@@ -1,18 +1,29 @@
 footer{
-    margin: 0px;
-    border-top: 1px solid #707070 ;
-    border-bottom: 1px solid #707070 ;
-
-    width: 100%;
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 2px solid #FFffff ;
+    width: 90%;
     padding: 10px 0 10px 0;
     font: normal normal normal 150% Helvetica Neue;
-    text-align: center;
+    text-align: left;
     bottom: 0;
+    display: inline-block;
+
 }
 
 
-.footer {
-    bottom: 0;
-    width: 100%;
-    height: 1.7rem;            /* Footer height */
+.footer p {
+    font-size: 90%;
+
+}
+.contactInfo{
+    display: inline-block;
+
+}
+.facebook-footer{
+    margin-left:66vw;
+
+    display: inline-block;
+    width: 50px;
 }

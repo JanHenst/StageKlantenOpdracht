@@ -12,6 +12,8 @@ html {
 
 body {
  margin: 0;
+ background: transparent linear-gradient(180deg, #1A1621 0%, #1A1C25 83%, #47BC55 100%) 0% 0% no-repeat padding-box;
+
 }
 
 #page-container {
@@ -25,9 +27,13 @@ body {
 
 
 
-.link a {
-
-    color: #A6431F;
+ a {
+text-decoration: none;
+    color: #47BC55;
 }
-.link a:active {color: #D9631E;}
-.link a:hover  {color: #D9631E;}
+ a:active {color: #47BC55;}
+ a:hover  {color: #47BC55;}
+ a:visited{
+ color: #47BC55;
+
+}

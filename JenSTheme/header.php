@@ -13,7 +13,6 @@
       <h2 class="logo"><a href="<?php echo get_site_url()  ?>">J&S</a></h2>
     <?php
     $pages = get_pages();
-//    echo "<a class='headerbutton' href='./'>home</a>";
     for($i=0;$i<sizeof($pages);$i++){
         if(get_the_title($pages[$i])=="404"){
             $i++;

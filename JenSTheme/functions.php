@@ -15,10 +15,8 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'carousel', get_template_directory_uri() . '/style/carousel.css',false,'1','all');
 	wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css',false,'1','all');
 
-        if(is_page()===false) {
 	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/javascript/landing/carousel.js', false, 1, true );
 
-        }
 
     if(wp_is_mobile()) {
 	wp_enqueue_script( 'hamburger', get_template_directory_uri() . '/javascript/header/hamburger.js', false, 1, true );
@@ -33,17 +31,36 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 function colors( $wp_customize )
 {
-	$wp_customize->add_section( 'starter_new_section_name' , array(
-		'title'    => __( 'thema opties', 'starter' ),
-		'priority' => 10
+
+	$wp_customize->add_panel( 'edit', array(
+		'priority'       => 10,
+		'capability'     => 'edit_theme_options',
+		'theme_supports' => '',
+		'title'          => __('thema opties', 'starter'),
+		'description'    => __('edit thema opties', 'JenStheme'),
 	) );
 
+
+	$wp_customize->add_section( 'kleuren' , array(
+		'title'    => __( 'kleur', 'starter' ),
+		'priority' => 10,
+		'panel'  => 'edit',
+
+	) );
+	$wp_customize->add_section( 'carousel' , array(
+		'title'    => __( 'carousel', 'starter' ),
+		'priority' => 20,
+		'panel'  => 'edit',
+
+	) );
+
+	//seting kleur
 	$wp_customize->add_setting( 'achtergrond' , array(
 		'default'   => '#FFFFFF',
 		'transport' => 'refresh',
 	) );
 	$wp_customize->add_setting( 'text' , array(
-		'default'   => '#000000',
+		'default'   => '#FFFFFF',
 		'transport' => 'refresh',
 	) );
 
@@ -55,29 +72,66 @@ function colors( $wp_customize )
 		'default'   => '#D9631E',
 		'transport' => 'refresh',
 	) );
+	// einde seting kleur
 
+	//seting carousel
+	$wp_customize->add_setting( 'fileUpload', array(
+
+//		'default' => '/',
+//        'transport' => 'refresh',
+	) );
+
+	// einde seting carousel
+
+
+
+	//control kleur
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'Theme-achtergrond', array(
 		'label'    => __( 'achtergrond', 'starter' ),
-		'section'  => 'starter_new_section_name',
+		'section'  => 'kleuren',
 		'settings' => 'achtergrond',
 
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'Theme-text', array(
 		'label'    => __( 'text', 'starter' ),
-		'section'  => 'starter_new_section_name',
+		'section'  => 'kleuren',
 		'settings' => 'text',
 	) ) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'Theme-accent1', array(
 		'label'    => __( 'accent 1', 'starter' ),
-		'section'  => 'starter_new_section_name',
+		'section'  => 'kleuren',
 		'settings' => 'accent1',
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'Theme-accent2', array(
 		'label'    => __( 'accent 2', 'starter' ),
-		'section'  => 'starter_new_section_name',
+		'section'  => 'kleuren',
 		'settings' => 'accent2',
 	) ) );
+    // einde controll kleur
+
+    //controll carousel
+	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'Theme-carousel', array(
+		'label' => __( 'fileUpload', 'starter' ),
+		'mime_type' => 'image',
+		'section' => 'carousel',
+		'settings' => 'fileUpload',
+
+	) ) );
+
+	$wp_customize->add_control( 'custom_theme_css', array(
+		'label' => __( 'Custom Theme CSS' ),
+		'type' => 'textarea',
+		'section' => 'fileUpload',
+	) );
+	// einde controll carousel
+
+
+
+
+
+
+
 }
 add_action('customize_register','colors');
 
@@ -86,9 +140,9 @@ add_action('customize_register','colors');
 function customize_css()
 {
 	$color1 =get_theme_mod('achtergrond', '#FFFFFF');
-	$color2 =get_theme_mod('text', '#000000');
-	$color3 =get_theme_mod('accent1', '#A6431F');
-	$color4 =get_theme_mod('accent2','#D9631E')
+	$color2 =get_theme_mod('text', '#FFFFFF');
+	$color3 =get_theme_mod('accent1', '#FFFFFF');
+	$color4 =get_theme_mod('accent2','#47BC55')
 	?>
 	<style type="text/css">
 		body { background-color: <?php echo $color1 ?>;
