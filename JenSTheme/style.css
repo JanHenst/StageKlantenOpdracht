@@ -9,7 +9,10 @@ Requires PHP: 7.0
 html {
  font: normal normal normal 100% Helvetica Neue;
 }
-
+.main{
+    width: 90%;
+ padding: 0% 5% 0% 5%
+}
 body {
  margin: 0;
  background: transparent linear-gradient(180deg, #1A1621 0%, #1A1C25 83%, #47BC55 100%) 0% 0% no-repeat padding-box;

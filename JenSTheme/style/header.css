@@ -29,7 +29,7 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: #A6431F;
+    color: #FFffff;
     margin: 0 5px;
     cursor: pointer;
 }
@@ -37,12 +37,11 @@
 .nav a:hover  {color: #47BC55;}
 
 .nav .logo a {
-    color: #000;
+    color: #FFffff;
     margin: 5px 10px 5px 10px;
     font-size: 35px;
 }
-.nav .logo a:active {color: #47BC55;}
-.nav .logo a:hover  {color: #47BC55;}
+
 
 .nav-icons {
     height: 60px;
@@ -117,8 +116,8 @@
     .pannel{
         top: 55px;
         z-index: 2;
-        background-color: white;
-        position: absolute;
+        background-color: #1a1621;
+        position: fixed;
         height: 100vh;
         width: 99.8vw;
         border-top:1px solid #000 ;
@@ -133,7 +132,7 @@
         margin: 5%;
         font-size: 200%;
         font-weight: bold;
-        color: #A6431F;
+        color: #FFffff;
     }
     .pannel a:active {color: #D9631E;}
     .pannel a:hover  {color: #D9631E;}

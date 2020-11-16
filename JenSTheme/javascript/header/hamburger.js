@@ -27,10 +27,12 @@ hamburger.addEventListener('click',function () {
 
     if(PannelBool===true) {
         pannel.classList.remove('no-pannel');
+        document.body.style.overflow="hidden";
         PannelBool=false;
     }
     else if(PannelBool===false){
         pannel.classList.add('no-pannel');
+        document.body.style.overflow="auto";
         PannelBool=true;
     }
     console.log("Pannel is"+PannelBool);

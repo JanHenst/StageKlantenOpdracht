@@ -29,7 +29,7 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 
 
-function colors( $wp_customize )
+function customcss( $wp_customize )
 {
 
 	$wp_customize->add_panel( 'edit', array(
@@ -56,7 +56,7 @@ function colors( $wp_customize )
 
 	//seting kleur
 	$wp_customize->add_setting( 'achtergrond' , array(
-		'default'   => '#FFFFFF',
+		'default'   => '#1a1621',
 		'transport' => 'refresh',
 	) );
 	$wp_customize->add_setting( 'text' , array(
@@ -65,11 +65,11 @@ function colors( $wp_customize )
 	) );
 
 	$wp_customize->add_setting( 'accent1' , array(
-		'default'   => '#A6431F',
+		'default'   => '#FFFFFF',
 		'transport' => 'refresh',
 	) );
 	$wp_customize->add_setting( 'accent2' , array(
-		'default'   => '#D9631E',
+		'default'   => '#47BC55',
 		'transport' => 'refresh',
 	) );
 	// einde seting kleur
@@ -122,7 +122,8 @@ function colors( $wp_customize )
 	$wp_customize->add_control( 'custom_theme_css', array(
 		'label' => __( 'Custom Theme CSS' ),
 		'type' => 'textarea',
-		'section' => 'fileUpload',
+		'section' => 'carousel',
+		'settings' => 'fileUpload',
 	) );
 	// einde controll carousel
 
@@ -133,31 +134,47 @@ function colors( $wp_customize )
 
 
 }
-add_action('customize_register','colors');
+add_action('customize_register','customcss');
 
 
 
 function customize_css()
 {
-	$color1 =get_theme_mod('achtergrond', '#FFFFFF');
+	$color1 =get_theme_mod('achtergrond', '#1a1621');
 	$color2 =get_theme_mod('text', '#FFFFFF');
 	$color3 =get_theme_mod('accent1', '#FFFFFF');
 	$color4 =get_theme_mod('accent2','#47BC55')
 	?>
 	<style type="text/css">
-		body { background-color: <?php echo $color1 ?>;
-			   color:  <?php echo $color2 ?>;
+		body {
+             color: <?php echo $color2 ?>;
+            background: transparent linear-gradient(180deg, <?php echo $color1?> 0%, <?php echo $color1?>  83%,<?php echo $color4?> 100%) 0% 0% no-repeat padding-box;
 		}
+        a{
+            color: <?php echo $color4 ?>;
+
+        }
 		.nav a{color:  <?php echo$color3  ?>;}
-		.email-nav{fill:  <?php echo$color3 ?>;}
+		.email-nav{fill:   <?php echo$color3 ?>;}
 		.facebook-nav{color:  <?php echo$color3 ?>;}
         .hamburger-icon{fill:  <?php echo$color3 ?>;}
+        .facebook-footer{color:  <?php echo$color3 ?>;}
         .nav a:active {color: <?php echo $color4?>;}
 		.nav a:hover  {color: <?php echo $color4?>;}
+        .pannel{
+            background-color: <? echo $color1 ?>;
+        }
+        .pannel a {
+            color: <?php echo $color2?>;
+        }
+        .pannel a:active {color: <?php echo $color4?>;}
+        .pannel a:hover  {color:<?php echo $color4?>;}
 
 
 	</style>
 	<?php
+    echo get_theme_mod('fileUpload','/');
+
 }
 add_action( 'wp_head', 'customize_css');
 
