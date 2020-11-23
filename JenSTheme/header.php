@@ -13,13 +13,17 @@
       <h2 class="logo"><a href="<?php echo get_site_url()  ?>">J&S</a></h2>
     <?php
     $pages = get_pages();
+    $exclude =array("404","Jenneke en Sanne");
+
     for($i=0;$i<sizeof($pages);$i++){
-        if(get_the_title($pages[$i])=="404"){
-            $i++;
-        }
-        else {
-	        echo"<a class='headerbutton' href='".get_page_link($pages[$i])."'>".get_the_title( $pages[ $i ] )."</a>";
-        }
+            for($j=0;$j<count($exclude);$j++) {
+	            if ( get_the_title( $pages[ $i ] ) == $exclude[ $j ] ) {
+		            $i ++;
+	            }
+            }
+		            echo "<a class='headerbutton' href='" . get_page_link( $pages[ $i ] ) . "'>" . get_the_title( $pages[ $i ] ) . "</a>";
+
+
     }
 
 ?>

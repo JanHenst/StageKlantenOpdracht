@@ -20,7 +20,7 @@ add_theme_scripts();
 <div class="main">
 	<?php
 echo get_the_title(get_post());
-echo get_the_content(get_post());
+echo the_content();
 ?>
 </div>
 <?php
