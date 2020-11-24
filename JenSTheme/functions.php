@@ -22,6 +22,7 @@ if(is_front_page()){
 }
 
 
+
     if(wp_is_mobile()) {
 	wp_enqueue_script( 'hamburger', get_template_directory_uri() . '/javascript/header/hamburger.js', false, 1, true );
     }
