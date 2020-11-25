@@ -16,19 +16,22 @@ wp_head();
 get_header();
 
 add_theme_scripts();
+
 ?>
 <div class="main">
 <?php
 echo get_the_title(get_post());
 echo  get_the_content();
 $commentList = get_comments();
-$commentid=get_comment_ID();
-echo $commentList.$commentid[0];
-echo get_the_title($commentList);
-echo get_comment_author($commentList);
-echo get_comment_date($commentList);
-echo get_comment_time($commentList);
-echo get_comment_reply_link(null,$commentList);
+for($i=0; $i<count($commentList);$i++) {
+	echo '<br>' . get_comment_author( $commentList[$i]);
+	echo '<br>' . get_avatar(null,null,null,'avatar image');
+	echo '<br>' . get_comment_date( $commentList[$i]);
+	echo '<br>' . get_comment_text( $commentList[$i]);
+
+}
+comment_form( );
+
 ?>
 </div>
   <?php
