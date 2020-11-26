@@ -29,6 +29,11 @@ body {
 }
 
 
+h1 {
+ font-size: 2em;
+ text-align: center;
+}
+
 
  a {
 text-decoration: none;
@@ -45,4 +50,22 @@ text-decoration: none;
 }
 
 .wp-block-video .controls{
+}
+
+
+.jenneke-image img, .sanne-image img  {
+ border: 1px solid transparent;
+ border-radius: 50px;
+}
+
+ @media (min-width: 1200px) {
+ .jenneke-image {
+  margin-left: 300px;
+ }
+ .sanne-image {
+  margin-right: 300px;
+ }
+ .sanne-image figcaption, .jenneke-image figcaption {
+  text-align: center;
+ }
 }
