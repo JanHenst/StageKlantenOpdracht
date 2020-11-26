@@ -1,7 +1,7 @@
 footer{
     margin: 5%;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 70px;
+    margin-bottom: 20px;
     border-top: 2px solid #FFffff ;
     width: 90%;
     padding: 10px 0 10px 0;
@@ -12,6 +12,14 @@ footer{
 
 }
 
+
+.footer h3 {
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+.footer .contactInfo h3 {
+    text-align: left;
+}
 
 .footer p {
     font-size: 90%;

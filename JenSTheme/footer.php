@@ -1,5 +1,6 @@
 
       <footer class="footer">
+          <h3>Jenneke & Sanne</h3>
           <div class="contactInfo">
               <h3>Contact</h3>
               <p>Example@gmail.com</p>
