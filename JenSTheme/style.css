@@ -19,6 +19,25 @@ body {
 
 }
 
+ input:focus,
+ select:focus,
+ textarea:focus,
+ button:focus {
+  outline: none;
+ }
+
+ button {
+  background: #47BC55;
+  color: #000;
+  cursor: pointer;
+  border: 0;
+  border-radius: 1px;
+  text-align: center;
+  font-size: 16px;
+  font: normal normal normal 100% Helvetica Neue;
+  padding: 10px;
+ }
+
 #page-container {
  position: relative;
  min-height: 100%;
@@ -69,3 +88,85 @@ text-decoration: none;
   text-align: center;
  }
 }
+
+ /************
+ Contact page
+ ************/
+
+ .form-contact {
+  border-left: 2px solid #fff;
+ }
+ .form-contact .flex-inputs {
+   display: flex;
+ }
+ .form-contact .name-input {margin-right: 10px;}
+ .form-contact .tel-input {margin-left: 10px;}
+ .form-contact .email-input{width: 382px;}
+ .form-contact li {
+   list-style-type: none;
+   margin-bottom: 15px;
+ }
+ .form-contact input, .form-contact textarea {
+   background: transparent;
+   color: #fff;
+   border: 2px solid #fff;
+   border-radius: 3px;
+   font: normal normal normal 100% Helvetica Neue;
+   padding: 5px;
+ }
+ .form-contact input::placeholder, .form-contact textarea::placeholder {
+   color: #fff;
+   font: normal normal normal 100% Helvetica Neue;
+ }
+ .form-contact .button-form {
+  width: 382px;
+ }
+
+
+ @media (max-width: 781px){
+  .form-contact .flex-inputs {
+    display: unset;
+  }
+  .form-contact .email-input{
+    width: 290px;
+  }
+  .form-contact .button-form {
+    width: 290px;
+  }
+  .form-contact .name-input, .form-contact .tel-input {
+   margin-left: 0;
+   margin-right: 0;
+  }
+  .form-contact textarea, .form-contact input {
+   width: 290px;
+  }
+  .form-contact {
+    border-left: 0;
+    margin-left: -40px;
+  }
+ }
+
+ @media (max-width: 781px) and (min-width: 600px) {
+  .wp-block-column.form-contact {
+   flex-basis: 100% !important;
+   margin-left: -40px;
+  }
+ }
+
+ @media (min-width: 782px) {
+   .form-contact form {
+    margin-left: 10%;
+   }
+ }
+
+ @media (min-width: 900px) {
+  .form-contact form {
+   margin-left: 20%;
+  }
+ }
+
+ @media (min-width: 1100px) {
+  .form-contact form {
+   margin-left: 25%;
+  }
+ }
