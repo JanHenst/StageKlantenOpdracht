@@ -14,10 +14,14 @@ wp_head();
 
 
 get_header();
-
 add_theme_scripts();
-
 ?>
+<style>
+.nav{
+    margin-top:-71px;
+
+}
+</style>
 <div class="main">
 <?php
 echo get_the_title(get_post());

@@ -15,8 +15,14 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'carousel', get_template_directory_uri() . '/style/carousel.css',false,'1','all');
 	wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css',false,'1','all');
 
+
+
+
 	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/javascript/landing/carousel.js', false, 1, true );
-if(is_front_page()){
+	wp_enqueue_script( 'speelLijst', get_template_directory_uri() . '/javascript/speellijst/getspeellijst.js', false, 1, true );
+
+
+	if(is_front_page()){
 	wp_enqueue_style( 'landing', get_template_directory_uri() . '/style/landing.css',false,'1','all');
 
 }
@@ -34,9 +40,16 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 
 
+
+
+
+
+
 function customcss( $wp_customize )
 {
 
+
+	//pannels
 	$wp_customize->add_panel( 'edit', array(
 		'priority'       => 10,
 		'capability'     => 'edit_theme_options',
@@ -45,7 +58,10 @@ function customcss( $wp_customize )
 		'description'    => __('edit thema opties', 'JenStheme'),
 	) );
 
+	//einde pannels
 
+
+    //sections
 	$wp_customize->add_section( 'kleuren' , array(
 		'title'    => __( 'kleur', 'starter' ),
 		'priority' => 10,
@@ -58,6 +74,11 @@ function customcss( $wp_customize )
 		'panel'  => 'edit',
 
 	) );
+
+
+
+
+	//einde sections
 
 	//seting kleur
 	$wp_customize->add_setting( 'achtergrond' , array(
@@ -85,8 +106,9 @@ function customcss( $wp_customize )
 		'default' => null,
         'transport' => 'refresh',
 	) );
+	// einde setting carousel
 
-	// einde seting carousel
+
 
 
 
@@ -102,7 +124,6 @@ function customcss( $wp_customize )
 		'section'  => 'kleuren',
 		'settings' => 'text',
 	) ) );
-
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'Theme-accent1', array(
 		'label'    => __( 'accent 1', 'starter' ),
 		'section'  => 'kleuren',
@@ -124,33 +145,7 @@ function customcss( $wp_customize )
 
 	) ) );
 
-	$wp_customize->add_control( 'custom_theme_css', array(
-		'label' => __( 'images'),
-		'type' => 'file',
-		'section' => 'carousel',
-		'settings' => 'fileUpload',
-        'input_attrs' => array(
-			'multiple' =>' ',
-			'files' =>' ',
-            'name' => 'upload[]',
-
-        ),
-	) );
-
-	$wp_customize->add_control( 'submit', array(
-		'type' => 'submit',
-		'section' => 'carousel',
-		'settings' => 'fileUpload',
-		'input_attrs' => array(
-            'value' => 'Upload Image',
-            'name' => 'submit'
-		),
-	) );
-
-
 	// einde controll carousel
-
-
 
 
 
@@ -166,7 +161,6 @@ function customize_css() {
 	$color2 = get_theme_mod( 'text', '#FFFFFF' );
 	$color3 = get_theme_mod( 'accent1', '#FFFFFF' );
 	$color4 = get_theme_mod( 'accent2', '#47BC55' );
-	$file   = get_theme_mod( 'fileUpload', './' );
 	?>
     <style type="text/css">
         body {
@@ -226,26 +220,35 @@ function customize_css() {
 
     </style>
 
+
+
 	<?php
-	print_r( $file );
 
 
-	$target_dir    = "uploads/";
-	$target_file   = $target_dir . basename( $_FILES["fileToUpload"]["name"] );
-	$uploadOk      = 1;
-	$imageFileType = strtolower( pathinfo( $target_file, PATHINFO_EXTENSION ) );
-	if ( isset( $_POST["submit"] ) ) {
-		$check = getimagesize( $_FILES["fileToUpload"]["tmp_name"] );
-		if ( $check !== false ) {
-			echo "File is an image - " . $check["mime"] . ".";
-			$uploadOk = 1;
-		} else {
-			echo "File is not an image.";
-			$uploadOk = 0;
-		}
+//carousel
+
+    $file = get_theme_mod( 'fileUpload', '/' );
+    $target_folder=getcwd().'plaatjes/carousel/carouselContent';
+	$upload_file   = wp_get_attachment_image_src( $file)[0];
+    $file_name =basename($upload_file);
+	echo "<script> console.log('".getcwd().parse_url($upload_file)['path']."')</script>";
+//	copy("test.png",$target_folder.$file_name);
+//	copy("test.png","plaatjes/test.png");
+
+//einde carousel
 
 
-	}
+
+
+
+
+
+
+
+
+
+
 }
 add_action( 'wp_head', 'customize_css');
+
 
