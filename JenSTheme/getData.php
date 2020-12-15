@@ -8,8 +8,9 @@
 echo '<script>var speelLijst = [];</script>';
 $i=0;
 foreach (databaseRead("`speel lijst`") as $item){
-$i++;
-echo "<script> speelLijst[".$i."]=[".$item['date'].",'".$item['title']."','".$item['location']."',".$item['price'].",'".$item['url']."']</script>";
+
+echo "<script> speelLijst[".$i."]=['".$item['date']."','".$item['title']."','".$item['location']."',".$item['price'].",'".$item['url']."']</script>";
+	$i++;
 }
 echo '<script> console.log(speelLijst);</script>';
 function databaseRead($table) {

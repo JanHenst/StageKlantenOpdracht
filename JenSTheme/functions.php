@@ -232,7 +232,7 @@ function customize_css() {
 	$upload_file   = wp_get_attachment_image_src( $file)[0];
     $file_name =basename($upload_file);
 	echo "<script> console.log('".getcwd().parse_url($upload_file)['path']."')</script>";
-//	copy("test.png",$target_folder.$file_name);
+//	copy("/test.png",$target_folder.$file_name);
 //	copy("test.png","plaatjes/test.png");
 
 //einde carousel
