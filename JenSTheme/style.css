@@ -31,7 +31,7 @@ body {
   color: #000;
   cursor: pointer;
   border: 0;
-  border-radius: 1px;
+  border-radius: 5px;
   text-align: center;
   font-size: 16px;
   font: normal normal normal 100% Helvetica Neue;
@@ -89,6 +89,32 @@ text-decoration: none;
  }
 }
 
+ /***************
+ Speellijst page
+ ***************/
+
+ @media (max-width: 767px){
+  .speellijst div {
+   text-align: center;
+   font-size: 20px;
+   margin-bottom: 5px;
+  }
+  .speellijst button {
+   margin-bottom: 20px;
+  }
+ }
+ @media (min-width: 768px){
+  .speellijst div {
+   display: flex;
+   justify-content: space-between;
+   font-size: 20px;
+   margin-top: 15px;
+  }
+  .speellijst div div {
+   width: 20%;
+  }
+ }
+
  /************
  Contact page
  ************/
@@ -120,6 +146,7 @@ text-decoration: none;
  }
  .form-contact .button-form {
   width: 382px;
+  border-radius: 1px;
  }
 
 

@@ -19,7 +19,7 @@ for(i=0;i<speelLijst.length;i++) {
     var locationtext = document.createTextNode(speelLijst[i][2]);
     var pricetext = document.createTextNode("€" + speelLijst[i][3]);
     var urllink = document.createTextNode(speelLijst[i][4]);
-    var urltext = document.createTextNode("koop");
+    var urltext = document.createTextNode("Kaartjes");
 
     var url = document.createElement("button");
     var price = document.createElement("DIV");
