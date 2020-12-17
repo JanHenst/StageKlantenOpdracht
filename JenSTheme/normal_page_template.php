@@ -19,7 +19,7 @@ add_theme_scripts();
 <div class="main">
 	<?php
 echo "<div> <h1>" .get_the_title(get_post()) . "</h1> </div>";
-echo  get_the_content();
+echo  the_content();
  	comment_form();
 
 ?>
