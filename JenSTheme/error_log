@@ -1,3 +1,48 @@
 
 06-Jan-2021 14:32:58 UTC] PHP Warning:  copy(plaatjes/test.png): failed to open stream: No such file or directory in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/copy.php on line 2
 [06-Jan-2021 14:37:36 UTC] PHP Warning:  copy(/plaatjes/test.png): failed to open stream: No such file or directory in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/copy.php on line 2
+[06-Jan-2021 20:58:26 UTC] PHP Notice:  Undefined variable: subject in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 16
+[06-Jan-2021 20:58:26 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 17
+[06-Jan-2021 20:58:26 UTC] PHP Notice:  Undefined variable: tel in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 18
+[06-Jan-2021 20:58:26 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 19
+[06-Jan-2021 20:58:26 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:58:26 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:58:27 UTC] PHP Notice:  Undefined variable: subject in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 16
+[06-Jan-2021 20:58:27 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 17
+[06-Jan-2021 20:58:27 UTC] PHP Notice:  Undefined variable: tel in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 18
+[06-Jan-2021 20:58:27 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 19
+[06-Jan-2021 20:58:27 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:58:27 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:59:26 UTC] PHP Notice:  Undefined variable: subject in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 16
+[06-Jan-2021 20:59:26 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 17
+[06-Jan-2021 20:59:26 UTC] PHP Notice:  Undefined variable: tel in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 18
+[06-Jan-2021 20:59:26 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 19
+[06-Jan-2021 20:59:26 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:59:26 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:59:36 UTC] PHP Notice:  Undefined variable: subject in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 16
+[06-Jan-2021 20:59:36 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 17
+[06-Jan-2021 20:59:36 UTC] PHP Notice:  Undefined variable: tel in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 18
+[06-Jan-2021 20:59:36 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 19
+[06-Jan-2021 20:59:36 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:59:36 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:59:38 UTC] PHP Notice:  Undefined variable: subject in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 16
+[06-Jan-2021 20:59:38 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 17
+[06-Jan-2021 20:59:38 UTC] PHP Notice:  Undefined variable: tel in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 18
+[06-Jan-2021 20:59:38 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 19
+[06-Jan-2021 20:59:38 UTC] PHP Notice:  Undefined variable: name in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 20:59:38 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 22
+[06-Jan-2021 21:13:29 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 16
+[06-Jan-2021 21:13:58 UTC] PHP Notice:  Undefined variable: message in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 16
+[06-Jan-2021 21:23:00 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:23:00 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:23:38 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:23:38 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:25:52 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:25:52 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:25:57 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:25:57 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:26:02 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:26:02 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 15
+[06-Jan-2021 21:26:52 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 17
+[06-Jan-2021 21:26:52 UTC] PHP Warning:  A non-numeric value encountered in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 17
+[06-Jan-2021 21:29:29 UTC] PHP Notice:  Undefined variable: comm in /home/i76et3cz06d3/public_html/ft-webdevelopment.com/florian/wordpress/wp-content/themes/JenSTheme/mailTo.php on line 21

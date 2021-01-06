@@ -22,14 +22,14 @@ add_theme_scripts();
                     <?php the_content(); ?>
                     <div class="wp-block-column form-contact" style="flex-basis: 66.66%;">
 
-                    <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
+                    <form action="../wp-content/themes/JenSTheme/mailTo.php" id="contactForm" method="post">
                         <ul>
                             <div class="flex-inputs">
                                 <li class="name-input">
                                     <input type="text" name="contactName" id="contactName" value="" placeholder="Name"/>
                                 </li>
                                 <li class="tel-input">
-                                    <input type="text" name="contactName" id="contactName" value="" placeholder="Tel"/>
+                                    <input type="text" name="tellinput" id="tellinput" value="" placeholder="Tel"/>
                                 </li>
                             </div>
                             <li>
