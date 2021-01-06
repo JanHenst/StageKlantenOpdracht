@@ -170,11 +170,24 @@ function customize_css() {
 
         a {
             color: <?php echo $color4 ?>;
-
+        }
+        a:hover  {
+            color: <?php echo $color4 ?>;
+        }
+        a:visited {
+            color: <?php echo $color4 ?>;
         }
 
-        .nav a {
+        .nav {
+            background: <?php echo $color1?> ;
+        }
+
+        .nav a.headerbutton {
             color: <?php echo$color3  ?>;
+        }
+
+        .nav .logo a {
+            color: <?php echo$color3 ?>;
         }
 
         .email-nav {
@@ -201,6 +214,11 @@ function customize_css() {
             color: <?php echo $color4?>;
         }
 
+        button {
+            background-color: <?php echo$color4 ?>;
+            color: <?php echo$color3 ?>;
+        }
+
         .pannel {
             background-color: <? echo $color1 ?>;
         }
@@ -215,6 +233,18 @@ function customize_css() {
 
         .pannel a:hover {
             color: <?php echo $color4?>;
+        }
+
+        button.button.green-box.ic-design {
+            background: <?php echo$color4 ?>;
+        }
+
+        .form-contact input, .form-contact textarea {
+            color: <?php echo$color3 ?>;
+        }
+
+        .form-contact input::placeholder, .form-contact textarea::placeholder {
+            color: <?php echo$color3 ?>;
         }
 
 
