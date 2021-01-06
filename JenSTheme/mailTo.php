@@ -9,7 +9,7 @@
 
 
 
-$to = "florian.tjeertes@ziggo.nl";
+$to = "jennekeensanne@gmail.com";
 $subject = "Wordpress JenS";
 $name=$_POST['contactName'];
 $body=$_POST['comments'];
