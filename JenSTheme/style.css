@@ -144,6 +144,18 @@ text-decoration: none;
   height: unset;
  }
 
+ div#functies table.features-table, div#after-product-details {
+  color: #000;
+ }
+
+ button.button.green-box.ic-design {
+  background: #47BC55;
+ }
+
+ body #shopping-cart-container table.cart-products tr.new_section td, #shopping-cart-submit-container table.cart-products tr.new_section td {
+  border-top: 1px solid #fff;
+ }
+
  /************
  Contact page
  ************/
