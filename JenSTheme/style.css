@@ -92,6 +92,22 @@ text-decoration: none;
  }
 }
 
+ /*********
+ Home page
+ *********/
+
+ @media (min-width: 768px) {
+  .wp-block-video video {
+   max-width: 60%;
+  }
+ }
+ @media (min-width: 1440px) {
+  .wp-block-video video {
+   max-width: 40%;
+  }
+ }
+
+
  /***************
  Speellijst page
  ***************/
