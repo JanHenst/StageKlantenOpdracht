@@ -15,9 +15,9 @@ echo "<script> speelLijst[".$i."]=['".$item['date']."','".$item['title']."','".$
 echo '<script> console.log(speelLijst);</script>';
 function databaseRead($table) {
 	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$database="SpeelLijst";
+	$username = "floortje";
+	$password = 'f$Orm7q$hCU5';
+	$database="speelLijst";
 
 
 	try {

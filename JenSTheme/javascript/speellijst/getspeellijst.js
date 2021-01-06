@@ -27,6 +27,11 @@ for(i=0;i<speelLijst.length;i++) {
     var Name = document.createElement("DIV");
     var year = document.createElement("DIV");
 
+    url.className='button';
+    console.log(urllink);
+url.setAttribute('onclick',' redirect ("'+speelLijst[i][4]+'")');
+
+
     var element = document.createElement("DIV");
     element.appendChild(year);
     element.appendChild(Name);
@@ -61,3 +66,12 @@ else {
 
 
     // datemonthyear[0]<=currentyear&&datemonthyear[1]-1<=currentmonth&&datemonthyear[2]<currentday
+
+
+
+function redirect ( url){
+    console.log(url);
+        location.replace(url);
+
+
+    };

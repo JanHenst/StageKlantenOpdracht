@@ -12,12 +12,11 @@ $title = $_POST['title'];
 $location = $_POST['location'];
 $price = $_POST['price'];
 $redirect = $_POST['redirect'];
-//$wright=$_POST['wright'];
+$url=$_POST['url'];
 
 $date=str_replace("-", "", $date);
 
 
-$url="www.google.nl";
 
 if($date&&$title&&$location&&$price&&$redirect) {
 	databaseWright( $date, $title, $location, $price, $url,$redirect );
@@ -29,9 +28,9 @@ if($date&&$title&&$location&&$price&&$redirect) {
 
 
 		$servername = "localhost";
-		$username = "root";
-		$password = "";
-		$database="SpeelLijst";
+		$username = "floortje";
+		$password = 'f$Orm7q$hCU5';
+		$database="speelLijst";
 
 
 		try {

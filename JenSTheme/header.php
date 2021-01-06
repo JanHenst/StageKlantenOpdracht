@@ -16,7 +16,7 @@
       <h2 class="logo"><a href="<?php echo get_site_url()  ?>">J&S</a></h2>
     <?php
     $pages = get_pages();
-    $exclude =array("404","Jenneke en Sanne");
+    $exclude =array("404","Geluidsfragmenten","Jenneke en Sanne","Order info");
 
     for($i=0;$i<sizeof($pages);$i++){
             for($j=0;$j<count($exclude);$j++) {

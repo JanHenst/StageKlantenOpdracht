@@ -26,7 +26,7 @@ echo  the_content();
 </div>
 <?php
 if( current_user_can('administrator') ) {
-$path = "/stageproject/wp-content/themes/JenSTheme/addData.php";
+$path = "../wp-content/themes/JenSTheme/addData.php";
     $url=home_url($_SERVER['REQUEST_URI']);
 
 echo '
@@ -36,6 +36,7 @@ echo '
 <input  class="Form-title" type="text"    placeholder="Titel"      name="title">
 <input  class="Form-location" type="text" placeholder="Location"    name="location">
 <input  class="Form-price" type="number"  placeholder="€0.00"   min="0" step="any"   name="price">
+<input  class="Form-price" type="url"  placeholder="kaartje/"      name="url">
 <input  class="Form-price" type="hidden"  name="redirect" value="'.$url.'">
 
 <input class="Form-submit" type="submit">

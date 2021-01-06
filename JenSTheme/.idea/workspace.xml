@@ -12,7 +12,7 @@
     <session id="1792430692">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="3" />
@@ -28,7 +28,7 @@
           <entry key="comment" value="1" />
           <entry key="css" value="25" />
           <entry key="js" value="14" />
-          <entry key="php" value="87" />
+          <entry key="php" value="89" />
           <entry key="svg" value="2" />
         </counts>
       </usages-collector>
@@ -36,7 +36,7 @@
         <counts>
           <entry key="CSS" value="25" />
           <entry key="JavaScript" value="14" />
-          <entry key="PHP" value="87" />
+          <entry key="PHP" value="89" />
           <entry key="Perl" value="1" />
           <entry key="SVG" value="2" />
         </counts>
@@ -75,11 +75,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/normal_page_template.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includeParagraph.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -287,12 +301,12 @@
       <workItem from="1607422357241" duration="13613000" />
       <workItem from="1607952171474" duration="17404000" />
       <workItem from="1608035135236" duration="9431000" />
-      <workItem from="1608221894398" duration="89000" />
+      <workItem from="1608221894398" duration="313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178195000" />
+    <option name="totallyTimeSpent" value="178419000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -305,7 +319,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.2932761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -396,13 +409,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/comment" />
-    <entry file="file://$PROJECT_DIR$/includeParagraph.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comment.php" />
     <entry file="file://$PROJECT_DIR$/style.css" />
     <entry file="file://$PROJECT_DIR$/style/header.css">
@@ -420,7 +426,6 @@
     <entry file="file://$PROJECT_DIR$/mailTo.php" />
     <entry file="file://$PROJECT_DIR$/speelLijst_template.php" />
     <entry file="file://$PROJECT_DIR$/speellijst.php" />
-    <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/addData.php" />
     <entry file="file://$PROJECT_DIR$/header.php" />
     <entry file="file://$PROJECT_DIR$/functions.php" />
@@ -436,6 +441,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includeParagraph.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
