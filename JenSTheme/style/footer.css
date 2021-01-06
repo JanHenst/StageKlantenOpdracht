@@ -5,7 +5,8 @@ footer{
     border-top: 2px solid #FFffff ;
     width: 90%;
     padding: 10px 0 10px 0;
-    font: normal normal normal 150% Helvetica Neue;
+    font-family: 'Open Sans', sans-serif;
+    font: normal normal normal 130% Open Sans;
     text-align: left;
     bottom: 0;
     display: inline-block;

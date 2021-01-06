@@ -7,7 +7,7 @@ Requires PHP: 7.0
 
  */
 html {
- font: normal normal normal 100% Helvetica Neue;
+ font-family: 'Open Sans', sans-serif;
 }
 .main{
     width: 90%;
