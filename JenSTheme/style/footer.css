@@ -24,8 +24,12 @@ footer{
 
 .footer p {
     font-size: 90%;
-
 }
+
+.footer a {
+    color: #fff;
+}
+
 .contactInfo{
     display: inline-block;
 
