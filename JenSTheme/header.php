@@ -30,12 +30,12 @@
 
 ?>
       <div class="nav-icons">
-          <svg class="email-nav">
+          <a href="mailto:jennekeensanne@gmail.com"><svg class="email-nav">
               <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/email-icon.svg#email'></use>
-          </svg>
-          <svg class="facebook-nav">
+          </svg></a>
+          <a href="https://facebook.com/liedjesduo.nl/"><svg class="facebook-nav">
               <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/facebook.svg#facebook'></use>
-          </svg>
+          </svg></a>
       </div>
     </div>
 </header>
