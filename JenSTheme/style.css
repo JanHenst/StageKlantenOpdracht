@@ -26,16 +26,19 @@ body {
   outline: none;
  }
 
- button {
+ button{
   background: #47BC55;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   border: 0;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
   font-size: 16px;
   font: normal normal normal 100% Helvetica Neue;
   padding: 10px;
+ }
+ .white-border {
+  border: 1px solid #fff;
  }
 
 #page-container {
@@ -113,6 +116,32 @@ text-decoration: none;
   .speellijst div div {
    width: 20%;
   }
+ }
+
+ /***************
+ Repertoire page
+ ***************/
+
+ .geluidsfragmenten-button {
+  margin-top: 40px;
+ }
+
+ @media only screen and (max-width: 425px) {
+
+  .geluidsfragmenten-button {
+   margin-top: 2px;
+  }
+  .geluidsfragmenten-button.has-text-align-center {
+   text-align: left;
+  }
+
+ }
+
+ /*********
+ Shop page
+ *********/
+ body #content .price-filter-form .number-box, .price-filter-form .number-box {
+  height: unset;
  }
 
  /************
