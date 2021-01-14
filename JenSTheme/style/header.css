@@ -64,6 +64,11 @@
     transform: scale(0.25);
     cursor: pointer;
 }
+.email-nav:hover, .facebook-nav:hover {
+    fill: #47BC55;
+    color: #47BC55;
+}
+
 .hamburger-icon{
     color: black;
 }
@@ -136,6 +141,11 @@
     .pannel a:active {color: #D9631E;}
     .pannel a:hover  {color: #D9631E;}
 
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    .nav {
+        margin-top: -60px;
+    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {

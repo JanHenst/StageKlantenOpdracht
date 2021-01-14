@@ -7,7 +7,7 @@ Requires PHP: 7.0
 
  */
 html {
- font-family: 'Open Sans', sans-serif;
+ font-family: 'Roboto', sans-serif;
 }
 .main{
     width: 90%;
@@ -34,8 +34,8 @@ body {
   border-radius: 4px;
   text-align: center;
   font-size: 16px;
-  font: normal normal normal 100% Open Sans;
-  font-family: 'Open Sans', sans-serif;
+  font: normal normal normal 100% Roboto;
+  font-family: 'Roboto', sans-serif;
   padding: 10px;
  }
  .white-border {
@@ -183,8 +183,9 @@ text-decoration: none;
  .form-contact .flex-inputs {
    display: flex;
  }
- .form-contact .name-input {margin-right: 10px;}
- .form-contact .tel-input {margin-left: 10px;}
+ .form-contact .name-input {margin-right: 11px;}
+ .form-contact .tel-input {margin-left: 11px;}
+ .form-contact .tel-input input, .form-contact .name-input input {width: 180px;}
  .form-contact .email-input{width: 382px;}
  .form-contact li {
    list-style-type: none;
@@ -195,14 +196,14 @@ text-decoration: none;
    color: #fff;
    border: 2px solid #fff;
    border-radius: 3px;
-   font: normal normal normal 100% Open Sans;
-  font-family: 'Open Sans', sans-serif;
+   font: normal normal normal 100% Roboto;
+  font-family: 'Roboto', sans-serif;
   padding: 5px;
  }
  .form-contact input::placeholder, .form-contact textarea::placeholder {
    color: #fff;
-   font: normal normal normal 100% Open Sans;
-  font-family: 'Open Sans', sans-serif;
+   font: normal normal normal 100% Roboto;
+  font-family: 'Roboto', sans-serif;
  }
  .form-contact .button-form {
   width: 382px;

@@ -33,29 +33,33 @@
 
 @media (max-width: 320px) {
     .carouselContainer {
-        height: 41%;
+        height: 180px;
+    }
+    .arrowR, .arrowL{
+        top: 15%;
+    }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+    .carouselContainer {
+        height: 210px;
+    }
+    .arrowR, .arrowL{
+        top: 18%;
+    }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+    .carouselContainer {
+        height: 240px;
     }
     .arrowR, .arrowL{
         top: 20%;
     }
 }
-@media (min-width: 321px) and (max-width: 375px) {
-    .carouselContainer {
-        height: 48%;
-    }
-    .arrowR, .arrowL{
-        top: 23%;
-    }
-}
-@media (min-width: 376px) and (max-width: 425px) {
-    .carouselContainer {
-        height: 54%;
-    }
-    .arrowR, .arrowL{
-        top: 25%;
-    }
-}
 @media (min-width: 320px) and (max-width: 425px) {
+    .carouselContainer {
+        margin-top: 60px;
+    }
+
     .arrowR, .arrowL{
         transform: scale(.6);
     }

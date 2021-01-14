@@ -2,17 +2,19 @@ footer{
     margin: 5%;
     margin-top: 70px;
     margin-bottom: 20px;
-    border-top: 2px solid #FFffff ;
+    border-top: 2px solid #ffffff ;
     width: 90%;
     padding: 10px 0 10px 0;
-    font-family: 'Open Sans', sans-serif;
-    font: normal normal normal 130% Open Sans;
+    font-family: 'Roboto', sans-serif;
+    font: normal normal normal 130% Roboto;
     text-align: left;
     bottom: 0;
     display: inline-block;
-
 }
 
+.footer-content {
+    display: flex;
+}
 
 .footer h3 {
     text-align: center;
@@ -31,14 +33,40 @@ footer{
 }
 
 .contactInfo{
-    display: inline-block;
-
+    flex-basis: 50%;
 }
 .facebook-footer{
-    margin-left:66vw;
-
-    display: inline-block;
     width: 50px;
+}
+.facebook-footer:hover {
+    color: #47BC55;
+}
+
+.facebook-link {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .telefoon-text-footer {
+        display: unset;
+    }
+    .facebook-link {
+        flex-basis: 100%;
+        text-align: left;
+    }
+    .facebook-footer {
+        height: 70px;
+    }
+    .contactInfo {
+        flex-basis: 100%;
+    }
+    .contactInfo p {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -47,4 +75,10 @@ footer{
         margin-top: 30px;
     }
 
+}
+
+@media (min-width: 376px) {
+    .telefoon-text-footer {
+        display: none;
+    }
 }
