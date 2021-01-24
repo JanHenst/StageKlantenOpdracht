@@ -38,6 +38,10 @@ footer{
 .contactInfo{
     flex-basis: 50%;
 }
+
+.youtube-footer {
+    margin: 0 30px 0 10px;
+}
 .facebook-footer, .youtube-footer{
     width: 50px;
 }
