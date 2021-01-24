@@ -61,7 +61,7 @@ footer{
         flex-basis: 100%;
         text-align: left;
     }
-    .facebook-footer {
+    .facebook-footer, .youtube-footer {
         height: 70px;
     }
     .contactInfo {

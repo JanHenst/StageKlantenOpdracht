@@ -216,11 +216,12 @@ function customize_css() {
         }
 
         .youtube-footer {
-            color: <?php echo$color3 ?>;
+            fill: <?php echo$color3 ?>;
         }
 
         .facebook-footer:hover, .youtube-footer:hover {
             color: <?php echo$color4 ?>;
+            fill: <?php echo$color4 ?>;
         }
 
         .nav a:active {
