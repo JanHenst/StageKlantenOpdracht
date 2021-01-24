@@ -165,6 +165,10 @@ text-decoration: none;
   color: #000;
  }
 
+ .boxed #product_features table td, .boxed .product-features table td, table.ic-block td {
+  color : #000;
+ }
+
  button.button.green-box.ic-design {
   background: #47BC55;
  }
@@ -172,6 +176,12 @@ text-decoration: none;
  body #shopping-cart-container table.cart-products tr.new_section td, #shopping-cart-submit-container table.cart-products tr.new_section td {
   border-top: 1px solid #fff;
  }
+
+ div#product_filters_bar {
+  color: #000;
+ }
+
+
 
  /************
  Contact page

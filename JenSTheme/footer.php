@@ -9,12 +9,21 @@
                     &copy;2020 Jenneke & Sanne
                   </p>
               </div>
-              <div class="facebook-link">
-                  <a target=”_blank” href="https://facebook.com/liedjesduo.nl/">
-                      <svg class="facebook-footer">
-                        <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/facebook.svg#facebook'></use>
-                      </svg>
-                  <a/>
+              <div class="footer-links">
+                  <div class="youtube-link">
+                      <a target=”_blank” href="https://www.youtube.com/channel/UCEwKfjjGQa9U1pkWCafocWw">
+                          <svg class="youtube-footer">
+                              <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/youtube.svg#youtube'></use>
+                          </svg>
+                      <a/>
+                  </div>
+                  <div class="facebook-link">
+                      <a target=”_blank” href="https://facebook.com/liedjesduo.nl/">
+                          <svg class="facebook-footer">
+                            <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/facebook.svg#facebook'></use>
+                          </svg>
+                      <a/>
+                  </div>
               </div>
               <p class="telefoon-text-footer">
                   &copy;2020 Jenneke & Sanne

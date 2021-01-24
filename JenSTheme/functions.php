@@ -198,12 +198,29 @@ function customize_css() {
             color: <?php echo$color3 ?>;
         }
 
+        .youtube-nav {
+            color: <?php echo$color3 ?>;
+        }
+
+        .email-nav:hover, .facebook-nav:hover, .youtube-nav:hover {
+            fill: <?php echo$color4 ?>;
+            color: <?php echo$color4 ?>;
+        }
+
         .hamburger-icon {
             fill: <?php echo$color3 ?>;
         }
 
         .facebook-footer {
             color: <?php echo$color3 ?>;
+        }
+
+        .youtube-footer {
+            color: <?php echo$color3 ?>;
+        }
+
+        .facebook-footer:hover, .youtube-footer:hover {
+            color: <?php echo$color4 ?>;
         }
 
         .nav a:active {

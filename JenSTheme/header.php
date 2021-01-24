@@ -13,10 +13,14 @@
         <svg id="hamburger-icon" class="hamburger menu-icon">
             <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/menu.svg#menu'></use>
         </svg>
-      <h2 class="logo"><a href="<?php echo get_site_url()  ?>">J&S</a></h2>
+      <div class="logo">
+          <a href="<?php echo get_site_url()  ?>">
+              <img src="<?php echo get_template_directory_uri()?>/plaatjes/header/Logo_white.png">
+          </a>
+      </div>
     <?php
     $pages = get_pages();
-    $exclude =array("404","Geluidsfragmenten","Jenneke en Sanne","Order info");
+    $exclude =array("404","Jenneke en Sanne","Order info","Cart");
 
     for($i=0;$i<sizeof($pages);$i++){
             for($j=0;$j<count($exclude);$j++) {
@@ -36,6 +40,9 @@
           </svg></a>
           <a target=”_blank” href="https://facebook.com/liedjesduo.nl/"><svg class="facebook-nav">
               <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/facebook.svg#facebook'></use>
+          </svg></a>
+          <a target=”_blank” href="https://www.youtube.com/channel/UCEwKfjjGQa9U1pkWCafocWw"><svg class="youtube-nav">
+                  <use xlink:href='<?php echo get_template_directory_uri()?>/plaatjes/header/youtube.svg#youtube'></use>
           </svg></a>
       </div>
     </div>

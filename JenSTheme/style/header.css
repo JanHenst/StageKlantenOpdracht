@@ -22,6 +22,10 @@
     cursor: pointer;
 }
 
+.nav .logo a img {
+    width: 100px;
+}
+
 .nav a.headerbutton {
     height: 100%;
     /*margin: 8px 10px 0 10px;*/
@@ -50,21 +54,29 @@
 }
 
 .email-nav{
-    fill: #FFffff;
+    fill: #ffffff;
     width: 63.4px;
     height: 48.29px;
     transform: scale(0.5);
     cursor: pointer;
 }
 
-.facebook-nav{
-    color: #FFffff;
-    width: 150px;
-    height: 150px;
-    transform: scale(0.25);
+.youtube-nav{
+    fill: #ffffff;
+    width: 80px;
+    height: 80px;
+    transform: scale(0.5);
     cursor: pointer;
 }
-.email-nav:hover, .facebook-nav:hover {
+
+.facebook-nav{
+    color: #ffffff;
+    width: 50px;
+    height: 100px;
+    transform: scale(0.6);
+    cursor: pointer;
+}
+.email-nav:hover, .facebook-nav:hover, .youtube-nav:hover {
     fill: #47BC55;
     color: #47BC55;
 }
@@ -142,21 +154,14 @@
     .pannel a:hover  {color: #D9631E;}
 
 }
-@media (min-width: 320px) and (max-width: 425px) {
-    .nav {
-        margin-top: -60px;
-    }
-}
+/*@media (min-width: 320px) and (max-width: 425px) {*/
+/*    .nav {*/
+/*        margin-top: -60px;*/
+/*    }*/
+/*}*/
 
-@media (min-width: 426px) and (max-width: 768px) {
-    .nav {
-        margin-top: -20px;
-    }
-}
-
-@media (min-width: 425px) and (max-width: 1024px) {
-    .facebook-nav {
-        margin-left: -35px;
-        margin-right: -20px;
-    }
-}
+/*@media (min-width: 426px) and (max-width: 768px) {*/
+/*    .nav {*/
+/*        margin-top: -20px;*/
+/*    }*/
+/*}*/
