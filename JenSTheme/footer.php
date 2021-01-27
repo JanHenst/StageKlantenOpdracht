@@ -17,6 +17,11 @@
                           </svg>
                       <a/>
                   </div>
+                  <a class="doneer-link">
+                      <div class="doneer-footer">
+                          <button type="button" class="doneer-button">Doneer</button>
+                      </div>
+                  </a>
                   <div class="facebook-link">
                       <a target=”_blank” href="https://facebook.com/liedjesduo.nl/">
                           <svg class="facebook-footer">

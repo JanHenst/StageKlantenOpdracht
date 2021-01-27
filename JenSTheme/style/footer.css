@@ -36,7 +36,7 @@ footer{
 }
 
 .contactInfo{
-    flex-basis: 50%;
+    flex-basis: 70%;
 }
 
 .youtube-footer {
@@ -49,12 +49,19 @@ footer{
     color: #47BC55;
 }
 
+.doneer-link {
+    align-self: center;
+}
+.doneer-footer {
+    margin: 0 30px 0 0;
+}
+
 .footer-links {
-    flex-basis: 50%;
+    flex-basis: 30%;
     text-align: right;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 600px) {
     .footer-content {
         flex-direction: column;
     }
@@ -82,9 +89,16 @@ footer{
         margin-top: 30px;
     }
 
+    .youtube-footer {
+        margin: 0 10px 0 10px;
+    }
+    .doneer-footer {
+        margin: 0 10px 0 0;
+    }
+
 }
 
-@media (min-width: 376px) {
+@media (min-width: 601px) {
     .telefoon-text-footer {
         display: none;
     }
