@@ -29,8 +29,9 @@ if($date&&$title&&$location&&$price&&$redirect) {
 
 		$servername = "localhost";
 		$username = "floortje";
-		$password = 'f$Orm7q$hCU5';
-		$database="speelLijst";
+		$password = 'tV5buPo7z8qj';
+		$database="SpeelLijst";
+
 
 
 		try {

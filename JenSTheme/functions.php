@@ -20,6 +20,7 @@ function add_theme_scripts() {
 
 	wp_enqueue_script( 'carousel', get_template_directory_uri() . '/javascript/landing/carousel.js', false, 1, true );
 	wp_enqueue_script( 'speelLijst', get_template_directory_uri() . '/javascript/speellijst/getspeellijst.js', false, 1, true );
+	wp_enqueue_script( 'footer', get_template_directory_uri() . '/javascript/footer/footer.js', false, 1, true );
 
 
 	if(is_front_page()){

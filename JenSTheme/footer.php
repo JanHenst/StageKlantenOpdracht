@@ -19,7 +19,7 @@
                   </div>
                   <a class="doneer-link">
                       <div class="doneer-footer">
-                          <button type="button" class="doneer-button">Doneer</button>
+                          <button type="button" id="doneer" class="doneer-button">Doneer</button>
                       </div>
                   </a>
                   <div class="facebook-link">
