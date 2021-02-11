@@ -26,11 +26,10 @@ if($date&&$title&&$location&&$price&&$redirect) {
 
 	function databaseWright($date,$title,$location,$price,$url,$redirect){
 
+		include 'databaseInfo.php';
 
-		$servername = "localhost";
-		$username = "floortje";
-		$password = 'tV5buPo7z8qj';
-		$database="SpeelLijst";
+
+
 
 
 

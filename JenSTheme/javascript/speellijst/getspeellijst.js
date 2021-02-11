@@ -11,7 +11,6 @@ for(i=0;i<speelLijst.length;i++) {
     var currentmonth = today.getMonth();
     var currentday = today.getDate();
 
-    console.log(datemonthyear);
 
 
     var yeartext = document.createTextNode(speelLijst[i][0]);
@@ -19,6 +18,7 @@ for(i=0;i<speelLijst.length;i++) {
     var locationtext = document.createTextNode(speelLijst[i][2]);
     var pricetext = document.createTextNode("€" + speelLijst[i][3]);
     var urllink = document.createTextNode(speelLijst[i][4]);
+
     var urltext = document.createTextNode("Kaartjes");
 
     var url = document.createElement("button");
@@ -26,18 +26,32 @@ for(i=0;i<speelLijst.length;i++) {
     var Location = document.createElement("DIV");
     var Name = document.createElement("DIV");
     var year = document.createElement("DIV");
+    var id = document.createElement('input');
+
+
+    id.type="hidden";
+    id.value=speelLijst[i][5];
+id.name="id";
 
     url.className='button';
-    console.log(urllink);
-url.setAttribute('onclick',' redirect ("'+speelLijst[i][4]+'")');
+    url.type='button';
+    url.setAttribute('onclick',' redirect ("'+speelLijst[i][4]+'")');
 
 
-    var element = document.createElement("DIV");
+    var element = document.createElement("form");
+    element.className="optreden";
+    element.action="../wp-content/themes/JenSTheme/deleteData.php";
+    element.method="post";
+
+
+
     element.appendChild(year);
     element.appendChild(Name);
     element.appendChild(Location);
     element.appendChild(price);
     element.appendChild(url);
+    element.appendChild(id);
+
 
 
     year.appendChild(yeartext);
@@ -46,7 +60,6 @@ url.setAttribute('onclick',' redirect ("'+speelLijst[i][4]+'")');
     price.appendChild(pricetext);
     url.appendChild(urltext);
 
-    console.log(datemonthyear[0] + " " + currentyear + " " + datemonthyear[1] + " " + currentmonth + " " + datemonthyear[2] + " " + currentday);
 
     if (datemonthyear[0] < currentyear||datemonthyear[0] < currentyear&&datemonthyear[1]-1<=currentmonth||datemonthyear[0]<=currentyear&&datemonthyear[1]-1<=currentmonth&&datemonthyear[2]<currentday) {
 
@@ -62,7 +75,6 @@ else {
 }
 }
 
-    console.log(speelLijst[0]);
 
 
     // datemonthyear[0]<=currentyear&&datemonthyear[1]-1<=currentmonth&&datemonthyear[2]<currentday
@@ -70,7 +82,6 @@ else {
 
 
 function redirect ( url){
-    console.log(url);
         location.replace(url);
 
 

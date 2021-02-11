@@ -29,7 +29,24 @@ if( current_user_can('administrator') ) {
 $path = "../wp-content/themes/JenSTheme/addData.php";
     $url=home_url($_SERVER['REQUEST_URI']);
 
-echo '
+echo  '
+<script>
+let optreden = document.getElementsByClassName("optreden");
+
+  document.addEventListener("DOMContentLoaded", () => {
+
+for( let i=0 ;i< optreden.length; i++){
+     let  deleteform = document.createElement("input");
+deleteform.type="submit";
+    optreden[i].appendChild(deleteform);
+
+
+}
+});
+</script>
+
+
+
 <form class="speelLijstForm"  action="'.$path.'" method="post" >
 
 <input  class="Form-Date"  type="date"    name="date"> 
